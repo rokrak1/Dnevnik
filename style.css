@@ -1,0 +1,363 @@
+body,html{
+	font-family: 'Shadows Into Light', cursive;
+	margin: 0;
+}
+.body-main{
+	background-image: url("slike/front.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+}
+main{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.mainadr{
+	font-family: 'Shadows Into Light', cursive;
+	margin-top:340px;
+	font-size:4em;
+}
+.main-buttons{
+	margin-top:3%;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.btnPrijava{
+	margin-bottom:7%;
+}
+.btnMain{
+	font-family: 'Shadows Into Light', cursive;
+	padding:8px 50px;
+}
+.FormError{
+  color:red;
+}
+/*************Main page*************/
+nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	height:50px;
+	background-color:#F0F8FF;
+}
+nav > *{
+	min-width:97px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color:black;
+	font-family: 'Shadows Into Light', cursive;
+}
+.nav-right{
+	display:flex;
+	justify-content: space-around;
+}
+.nav-icons,.nav-icons > a,.nav-right > *,.side-settings > a{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin:0;
+}
+.nav > a,.nav-icons > a,.nav-right > *{
+	padding: 2px 8px;
+	height:50px;
+}
+.nav > img {
+	width:50px;
+}
+.fa-sign-out{
+	cursor:pointer;
+}
+.btnOdjava{
+	background-color:transparent;
+	border:0;
+	margin-left: 5px;
+}
+.side-settings > a{
+	height:50px;
+	padding: 2px 8px;
+}
+/*End of nav*/
+
+/*Home page*/
+.diaryName{
+	margin-top:3%;
+	text-align:center;
+}
+.form-groupName{
+	width:25%;
+	min-width:250px;
+}
+.home-container{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	width:100%;
+	font-family: 'Shadows Into Light', cursive;
+	margin-top:5%;
+}
+.home-container > div{
+	width:50%;
+	text-align:center;
+}
+/*Ustvari dnevnik*/
+.form-groupUstvari{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+	width:100%;
+}
+/*Home left side*/
+
+
+
+/*Home right side*/
+.home-right,.home-left{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.home-left-container{
+	display:flex;
+	flex-direction: row;
+}
+@media screen and (max-width:1500px){
+	.home-left-container{
+		flex-direction: column;
+		padding:0;
+	}
+}
+.home-left-container > *{
+	padding:30px;
+}
+.home-form{
+	text-align:left;
+	width:50%;
+}
+.form-group{
+	margin-top:3%;
+}
+.form-group1{
+	width:50% !important;
+}
+.form-group2{
+	width:80% !important;
+} 
+.form-group4{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
+.form-group5{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+.btn-home-form{
+	padding:5px 70px !important;
+}
+#stanje{
+	margin-left:4%;
+	min-width:50px;
+}
+.stateType{
+	font-size:0.8em;
+	color:gray;
+}
+/*switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*end of switch*/
+/*Zapis*/
+.zapis-container{
+	margin-top:4%;
+	display:flex;
+	flex-direction:column;
+	max-width:350px;
+	width:350px;
+	text-align:left;
+	border:1px solid lightgray;
+	border-radius: 5px;
+}
+.zapis-header{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom:1px solid lightgray;
+	padding:5px 10px;
+}
+.zapis-body{
+	padding:10px;
+	border-bottom:1px solid lightgray;
+}
+.zapis-footer{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:5px 10px;
+}
+.btn-delZapis{
+	font-size:0.8em !important;
+	padding:3px 8px;
+}
+.zh-public{
+	background-color:lightgreen;
+}
+.zh-priv{
+	background-color:lightgray;
+}
+.butVisibility,.zf-btn,.btnPriljubljen{
+	background-color:transparent;
+	padding:0;
+	border:0;
+}
+.btnPriljubljen{
+		color:#e0dbdb;
+}
+/******************************
+			public
+******************************/
+.public-home-container{
+	width:55%;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap:wrap;
+}
+.public-container{
+	width:100%;
+	display:flex;
+	justify-content: center;
+}
+.zapis-container{
+	margin:3%;
+}
+.z-f-upDown,.rate-down{
+	display:flex;
+	flex-direction: row;
+}
+.zf-stOcen{
+	margin-right:12px;
+}
+.zf-stOcen > div,.z-h-naslov{
+	font-size:1.2em;
+	font-weight:bold;
+}
+.zf-btn{
+	padding:0 4px;
+}
+.zf-neg{
+	color:red;
+}
+.zf-poz{
+	color:#32CD32;
+}
+.srck{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+/*Settings*/
+.settings-container{
+	margin-top:3%;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items:center;
+}
+.settings-header{
+	margin-bottom:4%;
+}
+.form-inline{
+	width:30%;
+}
+.form-groupI{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin:2% 0;
+	min-width:230px;
+}
+.form-groupI > label{
+	white-space: nowrap;
+	min-width:110px;
+	text-align:center;
+	padding-top:7px;
+	font-weight: bold;
+}
+
+.form-group6{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+.form-groupSplit{
+	margin-top:3%;
+}
+.bgWhite{
+	background-color:white;
+}
